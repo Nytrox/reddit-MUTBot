@@ -127,5 +127,5 @@ while True:
         if time.time() - 25 <= giveawayTime <= time.time() + 25:
             GiveawayWinner(giveawayURLs[iterated])
             #Remove giveaway URL and times so they are not repeated
-            giveawayURLs.remove(0)
-            giveawayTimes.remove(0)
+            giveawayURLs.pop(0)
+            giveawayTimes.pop(0)
